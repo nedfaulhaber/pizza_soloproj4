@@ -1,0 +1,35 @@
+#result {
+  display: none;
+}
+
+h1 {
+  text-align: center;
+  font-family: Amatic SC;
+  font-size: 60px;
+}
+
+#swag {
+  text-align: center;
+
+}
+
+.boxit {
+  background-color: #CC9999;
+  padding: 10px;
+
+
+}
+
+body {
+  background-color: #330033;
+  color: white;
+}
+
+.form-group {
+  margin-top: 30px;
+}
+
+h3 {
+  font-family: Amatic SC;
+  font-size: 35px;
+}

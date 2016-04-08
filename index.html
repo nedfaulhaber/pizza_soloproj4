@@ -7,6 +7,7 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css" type=text/css>
+    <link href='https://fonts.googleapis.com/css?family=Amatic+SC:700' rel='stylesheet' type='text/css'>
     <script src = "js/jquery-1.12.3.js"></script>
     <script src = "js/scripts.js"></script>
     <title>Pop's Pizza</title>
@@ -14,8 +15,8 @@
   <body>
     <div class="container">
       <h1>Welcome to Pop's</h1>
+      <h3 id="swag">~Pizzas With Swag~</h3>
       <br>
-      <h3>~Pizzas With Swag~</h3>
       <div class="row">
         <div class="col-md-6">
           <form id="pizzas">
@@ -25,10 +26,10 @@
               <select class="form-control sizes">
                 <option disabled selected>Select Size</option>
                 <option value="10">Mix Tape (small)</option>
-                <option>Underground Following (medium)</option>
-                <option>Blowin' Up (large)</option>
-                <option>Superstar (extra large)</option>
-                <option>Young n Hungry (slice)</option>
+                <option value="14">Underground Following (medium)</option>
+                <option value="20">Blowin' Up (large)</option>
+                <option value="26">Superstar (extra large)</option>
+                <option value="3">Young n Hungry (slice)</option>
               </select>
             </div>
             <br>
@@ -53,24 +54,49 @@
                 <option disabled selected>Select Number of Deluxe Toppings</option>
                 <option>0</option>
                 <option value=2>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
+                <option value=4>2</option>
+                <option value=6>3</option>
+                <option value=8>4</option>
+                <option value=10>5</option>
               </select>
             </div>
             <br>
             <button type="submit" id="button" class="btn btn-info">Click here to view the "price of fame"</button>
           </form>
+          <br>
           <div id="result">
-            <h3>Your Dream Come True:</h3>
-              <h4>Size: <span id="finalSize"></span></h4>
-              <h4>Standard Toppings: <span id="finalStdToppings"></span></h4>
-              <h4>Deluxe Toppings: <span id="finalDlxToppings"></span></h4>
-              <h4>Price: <span id="finalPrice"></span></h4>
+            <h4>Your Dream Come True, for only $<span id="finalPrice"></span>.00</h4>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+            <h3>The Menu</h3>
+            <div class="boxit"
+              <h4>Sizes</h4>
+              <ul>
+                <li>Mix Tape (12")...$10</li>
+                <li>Underground Following (14")...$14</li>
+                <li>Blowin' Up (18")...$20</li>
+                <li>Superstar (22")...$26</li>
+                <li>Young n Hungry (slice)...$3</li>
+              </ul>
+              <h4>Toppings</h4>
+              <h5>Cheese and red sauce- no charge</h5>
+              <br>
+              <h5>Dress it up with standard toppings ($1 per topping):</h5>
+              <p>pepperoni, mushrooms, bell peppers, onions, sausage, ham, pineapple, jalapeños, pepperoncinis, tomatoes, black olives, garlic, anchovies</p>
+              <br>
+              <h5>Make it bling with deluxe toppings ($2 per topping):</h5>
+              <p>caviar, grasshoppers, marcona almonds, hershey's kisses, pop rocks, seaweed, truffle oil, artichoke hearts, feta cheese, fresh mozzarella, arugula, mama lils, sundried tomatoes, basil, kalamata olives, ricotta cheese</p>
+              <br>
+              <h4>What's Popular (18" only):</h4>
+              <ul>
+                <li>Max Martin - swedish fish, blow pops, marshmallow #1's...$26</li>
+                <li>Lil' Wayne - gold flake, diamonds, lemon fruit loops...$100</li>
+                <li>The Red Rocker - Cabo Wabo tequila drenched, topping of your choice...$51.50</li>
+              </ul>
           </div>
         </div>
       </div>
-    </div>
   </body>
 </html>

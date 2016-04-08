@@ -8,22 +8,22 @@ function Pizza(size, stdToppings, dlxToppings) {
 
 Pizza.prototype.pizzaPrice = function() {
   return this.size + this.stdToppings + this.dlxToppings
-
-
 }
+
 
 //user interface logic:
 $(document).ready(function() {
   $("form#pizzas").submit(function(event) {
     event.preventDefault();
 
-var inputtedSize = parseInt($(".sizes").val());
-var inputtedStdToppings = parseInt($(".std-toppings").val());
-var inputtedDlxToppings = parseInt($(".dlx-toppings").val());
-var newPizza = new Pizza(inputtedSize, inputtedStdToppings, inputtedDlxToppings);
-console.log(newPizza.pizzaPrice());
+    var inputtedSize = parseInt($(".sizes").val());
+    var inputtedStdToppings = parseInt($(".std-toppings").val());
+    var inputtedDlxToppings = parseInt($(".dlx-toppings").val());
+    var newPizza = new Pizza(inputtedSize, inputtedStdToppings, inputtedDlxToppings);
+    console.log(newPizza.pizzaPrice());
 
-$("#finalPrice").text(newPizza.pizzaPrice);
-
+    $("#result").show();
+    $("#finalPrice").text(newPizza.pizzaPrice());
+    
   });
 });
