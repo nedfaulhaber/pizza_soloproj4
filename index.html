@@ -23,43 +23,49 @@
         <div class="col-md-6">
           <form id="pizzas">
             <div class = "form-group">
-              <label for="films-showing">Films Showing:</label>
+              <label for="pizza-size">Pick a Size:</label>
               <br>
-              <select class="form-control films">
-                <option disabled selected>Select Film</option>
-                <option>Wet Leather</option>
-                <option>Stinky Pete and the Three Feet</option>
-                <option>Super Bro</option>
-                <option>In the Bathroom</option>
-                <option>The Zealot</option>
+              <select class="form-control size">
+                <option disabled selected>Select Size</option>
+                <option value="4">Mix Tape (small)</option>
+                <option value="0">Underground Following (medium)</option>
+                <option value="6">Blowin' Up (large)</option>
+                <option value="12">Superstar (extra large)</option>
               </select>
             </div>
             <br>
             <div class = "form-group">
-              <label for="age-group">Age Group:</label>
+              <label for="std-toppings">Dress It Up:</label>
               <br>
               <select class="form-control age">
-                <option disabled selected>Select Age Group</option>
-                <option value="0" id="adult">Adult (17-64)</option>
-                <option value="3">Senior (65-)</option>
-                <option value="5">Youth (6-16)</option>  <!--these values are numbers that represent the discounts that will be subtracted from the regPrice!-->
+                <option disabled selected>Select Number of Standard Toppings</option>
+                <option value="0" id="cheese">0</option>
+                <option value="1">1 topping</option>
+                <option value="2">2 toppings</option>
+                <option value="3">3 toppings</option>
+                <option value="4">4 toppings</option>
+                <option value="5">5 toppings</option>
               </select>
             </div>
             <br>
             <div class = "form-group">
-              <label for="film-time">Show Time:</label>
+              <label for="dlx-toppings">Dress It Fancy:</label>
               <br>
-              <select class="form-control time">
-                <option disabled selected>Select Show Time</option>
-                <option value="matinee">Matinee 3pm</option>
-                <option value="evening">Evening 7:30pm</option>
+              <select class="form-control age">
+                <option disabled selected>Select Number of Deluxe Toppings</option>
+                <option value="0">0</option>
+                <option value="1">1 topping</option>
+                <option value="2">2 toppings</option>
+                <option value="3">3 toppings</option>
+                <option value="4">4 toppings</option>
+                <option value="5">5 toppings</option>
               </select>
             </div>
             <br>
-            <button type="submit" id="button" class="btn btn-info">Click here to view ticket price</button>
+            <button type="submit" id="button" class="btn btn-info">Click here to view total price</button>
           </form>
           <div id="result">
-            <h3>You've got a ticket to see:</h3>
+            <h3></h3>
               <h4></h4>
               <br>
               <h2></h2>
