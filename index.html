@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/style.css" type=text/css>
+    <script src = "js/jquery-1.12.3.js"></script>
+    <script src = "js/scripts.js/"></script>
+    <title>Pop's Pizza</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to Pop's</h1>
+      <br>
+      <h3>~Pizzas With Swag~</h3>
+      <div class="row">
+        <div class="col-md-6">
+          <form id="pizzas">
+            <div class = "form-group">
+              <label for="films-showing">Films Showing:</label>
+              <br>
+              <select class="form-control films">
+                <option disabled selected>Select Film</option>
+                <option>Wet Leather</option>
+                <option>Stinky Pete and the Three Feet</option>
+                <option>Super Bro</option>
+                <option>In the Bathroom</option>
+                <option>The Zealot</option>
+              </select>
+            </div>
+            <br>
+            <div class = "form-group">
+              <label for="age-group">Age Group:</label>
+              <br>
+              <select class="form-control age">
+                <option disabled selected>Select Age Group</option>
+                <option value="0" id="adult">Adult (17-64)</option>
+                <option value="3">Senior (65-)</option>
+                <option value="5">Youth (6-16)</option>  <!--these values are numbers that represent the discounts that will be subtracted from the regPrice!-->
+              </select>
+            </div>
+            <br>
+            <div class = "form-group">
+              <label for="film-time">Show Time:</label>
+              <br>
+              <select class="form-control time">
+                <option disabled selected>Select Show Time</option>
+                <option value="matinee">Matinee 3pm</option>
+                <option value="evening">Evening 7:30pm</option>
+              </select>
+            </div>
+            <br>
+            <button type="submit" id="button" class="btn btn-info">Click here to view ticket price</button>
+          </form>
+          <div id="result">
+            <h3>You've got a ticket to see:</h3>
+              <h4></h4>
+              <br>
+              <h2></h2>
+              <br>
+              <p>Price: <span id="finalPrice"></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
