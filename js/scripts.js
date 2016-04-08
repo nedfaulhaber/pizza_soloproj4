@@ -1,14 +1,15 @@
 //business logic:
-function Pizza(size, toppings) {
+function Pizza(size, stdToppings, dlxToppings) {
   this.size = size;
-  this.toppings = toppings;
+  this.stdToppings = stdToppings;
+  this.dlxToppings = dlxToppings;
 }
 
-var medCheese = 14;
 
 Pizza.prototype.pizzaPrice = function() {
+  return this.size + this.stdToppings + this.dlxToppings;
 
-  if
+  }
 }
 
 
@@ -20,7 +21,7 @@ $(document).ready(function() {
   $("#pizzas").submit(function(event) {
     event.prevent.Default();
 
-
+var inputtedSize = $
 
   });
 });
